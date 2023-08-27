@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styling.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
+</head>
+<body>
+    <h1>👋 Hi, I'm Elizabeth Huang.</h1>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
+<br>I'm a <span id="typed" style="color: white"></span></h1>
+<script>
+  var typed = new Typed('#typed', {
+    strings: ["doodler", "developer","dreamer"],
+    typeSpeed: 50,
+    backSpeed: 50,
+    backDelay: 700,
+    loop: true
+});
+
+</script>
+    <div class="playlist">
+    
+    <div class="project">
+      <div class="numbertext">1</div>
+      <img src="https://drive.google.com/uc?export=view&id=1GZYPiEgYOs9EaJDJ0xunCPP5B4zCrAGa" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="project">
+      <div class="numbertext">2</div>
+      <img src="https://drive.google.com/uc?export=view&id=17uvNR6pRc01hUqmckWa_ASe8LeOSCo9x" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="project">
+        <div class="numbertext">4</div>
+        <img src="https://drive.google.com/uc?export=view&id=1WGf888I3PLUkFMTJZeS1EQfCL-42F34c" style="width:100%">
+        <div class="text">Caption Four</div>
+      </div>
+      
+    <div class="project">
+        <div class="numbertext">5</div>
+        <img src="https://drive.google.com/uc?export=view&id=1cJc-2VduRwHElpjoS5FAcKdeShwqcvkn" style="width:100%">
+        <div class="text">Caption Five</div>
+      </div>
+
+    <div class="project">
+        <div class="numbertext">6</div>
+        <img src="https://drive.google.com/uc?export=view&id=1ZNeUf2EEq6cXKuP6YipZhZS0PDDJXO3k" style="width:100%">
+        <div class="text">Caption Six</div>
+      </div>
+
+    <div class="project">
+        <div class="numbertext">7</div>
+        <img src="https://drive.google.com/uc?export=view&id=1zAd7r3B8ItFRemhGDkOvZ-urVcYIkGaL" style="width:100%">
+        <div class="text">Caption Seven</div>
+      </div>
+
+    <div class="project">
+        <div class="numbertext">8</div>
+        <img src="https://drive.google.com/uc?export=view&id=1iHJ--ZHta_WuICJ_Qn6BXOw3vBInqzTS" style="width:100%">
+        <div class="text">Caption Eight</div>
+    </div>
+
+    <div class="project">
+        <div class="numbertext">9</div>
+        <img src="https://drive.google.com/uc?export=view&id=1cB4d4aDIngFh3xPpHcasuiIAYRS0ORFj" style="width:100%">
+        <div class="text">Caption Nine</div>
+    </div>
+
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("project");
+
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+ 
+    
+</body>
+</html>
