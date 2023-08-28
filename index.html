@@ -9,8 +9,14 @@
 </head>
 
 <body>
-  <div class="header">
-    <h1 style="margin-top:5%;
+  <div class="container">
+    <img src="https://drive.google.com/uc?export=view&id=1ssViA3zyv5UaFUU8o3HXffpaGGAPa44M" style="width:90%; 
+    z-index: -1;
+    position: absolute;margin-top:-25%;opacity:0.5;
+    margin-left:40%;" >
+    
+    <h1 style="margin-top:10%;
+    z-index:1;
     margin-left:10%;">👋 Hi, I'm Elizabeth Huang.
     </h1>
 </div>
@@ -23,8 +29,8 @@ margin-left:10%;"></span>
 <script>
   var typed = new Typed('#typed', {
     strings: ["DEVELOPER . DREAMER . DOODLER ."],
-    typeSpeed: 50,
-    backSpeed: 50,
+    typeSpeed: 40,
+    backSpeed: 40,
     backDelay: 700,
     loop: true
 });
@@ -47,90 +53,329 @@ margin-left:10%;"></span>
     Interested in computer science, design, and physics with a focus in product design/ development and prototyping.
   </p>
 </div>
+<br>
+<h2 style="margin-left:10%;">SELECTED PROJECTS</h2>
+
+<div class="controls">
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+
+<div id="playdiv">
+<button id="play" class="play" onclick="autoSlides(slideIndex)">play</button>
+</div>
+
+<div id="haltdiv">
+<button id="halt" class="halt" onclick="pause()">pause</button></div>
+
+<!-- <button class="toggle" onclick="toggler()">TOGGLER</button> -->
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
 
     <div class="playlist">
     
+<!-- <a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a> -->
     <div class="project">
       <div class="numbertext">1</div>
-      <img src="https://drive.google.com/uc?export=view&id=1GZYPiEgYOs9EaJDJ0xunCPP5B4zCrAGa" style="width:100%">
-      <div class="text">Caption Text</div>
+      <img class="previous" src="https://drive.google.com/uc?export=view&id=1cB4d4aDIngFh3xPpHcasuiIAYRS0ORFj">
+      <img class="image" src="https://drive.google.com/uc?export=view&id=1GZYPiEgYOs9EaJDJ0xunCPP5B4zCrAGa">
+      <div class="text">
+        <h3>
+          TIMELINE
+        </h3>
+              <p>
+                Sample text
+              </p>
+        <h3>
+          TOOLS
+        </h3>
+              <p>
+                Sample text
+              </p>
+        <h3>
+          LINK
+        </h3>
+              <p>
+                Sample text
+              </p>
+        </div>
     </div>
     
     <div class="project">
       <div class="numbertext">2</div>
-      <img src="https://drive.google.com/uc?export=view&id=17uvNR6pRc01hUqmckWa_ASe8LeOSCo9x" style="width:100%">
-      <div class="text">Caption Two</div>
+      <img class="previous" src="https://drive.google.com/uc?export=view&id=1GZYPiEgYOs9EaJDJ0xunCPP5B4zCrAGa">
+      <img class="image" src="https://drive.google.com/uc?export=view&id=17uvNR6pRc01hUqmckWa_ASe8LeOSCo9x">
+      <div class="text">
+        <h3>
+          TIMELINE
+        </h3>
+              <p>
+                Sample text
+              </p>
+        <h3>
+          TOOLS
+        </h3>
+              <p>
+                Sample text
+              </p>
+        <h3>
+          LINK
+        </h3>
+              <p>
+                Sample text
+              </p>
+      </div>
     </div>
 
     <div class="project">
         <div class="numbertext">4</div>
-        <img src="https://drive.google.com/uc?export=view&id=1WGf888I3PLUkFMTJZeS1EQfCL-42F34c" style="width:100%">
-        <div class="text">Caption Four</div>
+        <img class="previous" src="https://drive.google.com/uc?export=view&id=17uvNR6pRc01hUqmckWa_ASe8LeOSCo9x">
+        <img class="image" src="https://drive.google.com/uc?export=view&id=1WGf888I3PLUkFMTJZeS1EQfCL-42F34c">
+        <div class="text">
+          <h3>
+            TIMELINE
+          </h3>
+                <p>
+                  Sample text
+                </p>
+          <h3>
+            TOOLS
+          </h3>
+                <p>
+                  Sample text
+                </p>
+          <h3>
+            LINK
+          </h3>
+                <p>
+                  Sample text
+                </p>
+        </div>
       </div>
       
     <div class="project">
         <div class="numbertext">5</div>
-        <img src="https://drive.google.com/uc?export=view&id=1cJc-2VduRwHElpjoS5FAcKdeShwqcvkn" style="width:100%">
-        <div class="text">Caption Five</div>
+        <img class="previous" src="https://drive.google.com/uc?export=view&id=1WGf888I3PLUkFMTJZeS1EQfCL-42F34c">
+        <img class="image" src="https://drive.google.com/uc?export=view&id=1cJc-2VduRwHElpjoS5FAcKdeShwqcvkn">
+        <div class="text">
+          <h3>
+            TIMELINE
+          </h3>
+                <p>
+                  Sample text
+                </p>
+          <h3>
+            TOOLS
+          </h3>
+                <p>
+                  Sample text
+                </p>
+          <h3>
+            LINK
+          </h3>
+                <p>
+                  Sample text
+                </p>
+        </div>
       </div>
 
     <div class="project">
         <div class="numbertext">6</div>
-        <img src="https://drive.google.com/uc?export=view&id=1ZNeUf2EEq6cXKuP6YipZhZS0PDDJXO3k" style="width:100%">
-        <div class="text">Caption Six</div>
+        <img class="previous" src="https://drive.google.com/uc?export=view&id=1cJc-2VduRwHElpjoS5FAcKdeShwqcvkn">
+        <img class="image" src="https://drive.google.com/uc?export=view&id=1ZNeUf2EEq6cXKuP6YipZhZS0PDDJXO3k">
+        <div class="text">
+          <h3>
+            TIMELINE
+          </h3>
+                <p>
+                  Sample text
+                </p>
+          <h3>
+            TOOLS
+          </h3>
+                <p>
+                  Sample text
+                </p>
+          <h3>
+            LINK
+          </h3>
+                <p>
+                  Sample text
+                </p>
+        </div>
       </div>
 
     <div class="project">
         <div class="numbertext">7</div>
-        <img src="https://drive.google.com/uc?export=view&id=1zAd7r3B8ItFRemhGDkOvZ-urVcYIkGaL" style="width:100%">
-        <div class="text">Caption Seven</div>
+        <img class="previous" src="https://drive.google.com/uc?export=view&id=1ZNeUf2EEq6cXKuP6YipZhZS0PDDJXO3k">
+        <img class="image" src="https://drive.google.com/uc?export=view&id=1zAd7r3B8ItFRemhGDkOvZ-urVcYIkGaL">
+        <div class="text">
+          <h3>
+            TIMELINE
+          </h3>
+                <p>
+                  Sample text
+                </p>
+          <h3>
+            TOOLS
+          </h3>
+                <p>
+                  Sample text
+                </p>
+          <h3>
+            LINK
+          </h3>
+                <p>
+                  Sample text
+                </p>
+        </div>
       </div>
 
     <div class="project">
         <div class="numbertext">8</div>
-        <img src="https://drive.google.com/uc?export=view&id=1iHJ--ZHta_WuICJ_Qn6BXOw3vBInqzTS" style="width:100%">
-        <div class="text">Caption Eight</div>
+        <img class="previous" src="https://drive.google.com/uc?export=view&id=1zAd7r3B8ItFRemhGDkOvZ-urVcYIkGaL">
+        <img class="image" src="https://drive.google.com/uc?export=view&id=1iHJ--ZHta_WuICJ_Qn6BXOw3vBInqzTS">
+        <div class="text">
+          <h3>
+            TIMELINE
+          </h3>
+                <p>
+                  Sample text
+                </p>
+          <h3>
+            TOOLS
+          </h3>
+                <p>
+                  Sample text
+                </p>
+          <h3>
+            LINK
+          </h3>
+                <p>
+                  Sample text
+                </p>
+        </div>
     </div>
 
     <div class="project">
         <div class="numbertext">9</div>
-        <img src="https://drive.google.com/uc?export=view&id=1cB4d4aDIngFh3xPpHcasuiIAYRS0ORFj" style="width:100%">
-        <div class="text">Caption Nine</div>
+        <img class="previous" src="https://drive.google.com/uc?export=view&id=1iHJ--ZHta_WuICJ_Qn6BXOw3vBInqzTS">
+        <img class="image" src="https://drive.google.com/uc?export=view&id=1cB4d4aDIngFh3xPpHcasuiIAYRS0ORFj">
+        <div class="text">
+          <h3>
+            TIMELINE
+          </h3>
+                <p>
+                  Sample text
+                </p>
+          <h3>
+            TOOLS
+          </h3>
+                <p>
+                  Sample text
+                </p>
+          <h3>
+            LINK
+          </h3>
+                <p>
+                  Sample text
+                </p>
+        </div>
     </div>
-
-    
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
     
     </div>
-
     <script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          pause()
+          showSlides(n);
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(n);
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("project");
     
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slides[slideIndex-1].style.display = "block";  
+        }
     
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
+        function autoSlides(n) {
       let i;
       let slides = document.getElementsByClassName("project");
-
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
       for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+        slides[i].style.display = "none";
       }
-      
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      slides[slideIndex-1].style.display = "inline-block";
+      customTimeout = setTimeout(autoSlides, 1500);
     }
+      function pause() {
+        clearTimeout(customTimeout);
+      }
+
+const play = document.getElementById("play");
+const halt = document.getElementById("halt");
+const playdiv = document.getElementById("playdiv");
+const haltdiv = document.getElementById("haltdiv");
+
+playdiv.style.display = "inline-block";
+haltdiv.style.display = "none";
+
+play.addEventListener("click", () => {
+  playdiv.style.display = "none";
+  haltdiv.style.display = "inline-block";
+});
+
+halt.addEventListener("click", () => {
+  playdiv.style.display = "inline-block";
+  haltdiv.style.display = "none";
+});
+
     </script>
  
-    
+<br>
+<br>
+<br>
+ 
+
+
+<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <iframe style="border-radius:12px" 
+  src="https://open.spotify.com/embed/playlist/3ElzOCFBGW8693nACsL7Wy?utm_source=generator" 
+  width="100%" height="50%" frameBorder="0" allowfullscreen="" 
+  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+  loading="lazy"></iframe>
+</div>
+
+<button class="openbtn" onclick="openNav()">
+  <img class="disc rotate" src="https://drive.google.com/uc?export=view&id=1xIloxtmujsIVKMob378Of_Yi3gJ6WQ97" alt="">
+</button>
+
+<script>
+  /* Set the width of the sidebar to 30% of the screen (show it) */
+function openNav() {
+  document.getElementById("mySidepanel").style.width = "30%";
+}
+
+/* Set the width of the sidebar to 0 (hide it) */
+function closeNav() {
+  document.getElementById("mySidepanel").style.width = "0";
+}
+
+
+</script>
 </body>
 </html>
