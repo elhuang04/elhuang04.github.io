@@ -329,12 +329,12 @@ margin-left:10%;"></span>
         showSlides(slideIndex);
         
         function plusSlides(n) {
-          pause()
           showSlides(n);
           showSlides(slideIndex += n);
         }
         
         function currentSlide(n) {
+            pause();
           showSlides(n);
           showSlides(slideIndex = n);
         }
