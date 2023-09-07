@@ -330,14 +330,7 @@ const playdiv = document.getElementById("playdiv");
 const haltdiv = document.getElementById("haltdiv");
         let slideIndex = 1;
         showSlides(slideIndex);
-        
-        function plusSlides(n) {
-            playdiv.style.display = "inline-block";
-            haltdiv.style.display = "none";
-          showSlides(n);
-          showSlides(slideIndex += n);
-            pause();
-        }
+       
         
         function currentSlide(n) {
           showSlides(n);
@@ -370,8 +363,15 @@ const haltdiv = document.getElementById("haltdiv");
       function pause() {
         clearTimeout(customTimeout);
       }
-
-playdiv.style.display = "inline-block";
+    
+        function plusSlides(n) {
+            playdiv.style.display = "inline-block";
+            haltdiv.style.display = "none";
+          showSlides(n);
+          showSlides(slideIndex += n);
+            pause();
+        }
+playdiv.style.display = "inline-block"
 haltdiv.style.display = "none";
 
 play.addEventListener("click", () => {
