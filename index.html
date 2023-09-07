@@ -327,7 +327,9 @@ margin-left:10%;"></span>
         showSlides(slideIndex);
         
         function plusSlides(n) {
-        pause();
+            pause();
+            playdiv.style.display = "inline-block";
+            haltdiv.style.display = "none";
           showSlides(n);
           showSlides(slideIndex += n);
         }
