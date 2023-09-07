@@ -332,11 +332,11 @@ const haltdiv = document.getElementById("haltdiv");
         showSlides(slideIndex);
         
         function plusSlides(n) {
-            pause();
             playdiv.style.display = "inline-block";
             haltdiv.style.display = "none";
           showSlides(n);
           showSlides(slideIndex += n);
+            pause();
         }
         
         function currentSlide(n) {
