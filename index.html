@@ -57,7 +57,7 @@ margin-left:10%;"></span>
 <h2 style="margin-left:10%;">SELECTED PROJECTS</h2>
 
 <div class="controls">
-<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="prev" onclick="minusSlides(1)">❮</a>
 
 <div id="playdiv">
 <button id="play" class="play" onclick="autoSlides(slideIndex)">play</button>
@@ -369,6 +369,13 @@ const haltdiv = document.getElementById("haltdiv");
             haltdiv.style.display = "none";
           showSlides(n);
           showSlides(slideIndex += n);
+            pause();
+        }
+        function minusSlides(n) {
+            playdiv.style.display = "inline-block";
+            haltdiv.style.display = "none";
+          showSlides(n);
+          showSlides(slideIndex -= n);
             pause();
         }
 playdiv.style.display = "inline-block"
