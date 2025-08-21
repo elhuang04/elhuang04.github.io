@@ -1,476 +1,158 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="styling.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Archivo Black' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet'>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elizabeth Huang | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
+<body class="bg-white text-gray-800 font-sans">
 
-<body>
-  <div class="container">
-    <img src="blueprint/5.png" style="width:90%; 
-    z-index: -1;
-    position: absolute;margin-top:-25%;opacity:0.5;
-    margin-left:40%;" >
-    
-    <h1 style="margin-top:10%;
-    z-index:1;
-    margin-left:10%;">👋 Hi, I'm Elizabeth Huang.
-    </h1>
-</div>
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-<h2>
-<span id="typed" style="
-margin-left:10%;"></span>
+<!-- Navbar -->
+<nav id="navbar" class="fixed top-4 left-0 right-0 mx-4 transition-all duration-300 px-10 md:px-40 py-4 flex justify-between items-center bg-white/30 backdrop-blur-md rounded-xl shadow z-50">
+  <h2 class="text-xl font-bold"><a href="#home" class="hover:text-blue-600"><img class="icon" alt="custom blue home icon" src="./icons/home.svg"></a></h2>
+  <ul class="flex space-x-6">
+    <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+    <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+    <li><a href="#about" class="hover:text-blue-600">About</a></li>
+    <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+  </ul>
+</nav>
 <script>
-  var typed = new Typed('#typed', {
-    strings: ["DEVELOPER . DREAMER . DOODLER ."],
-    typeSpeed: 40,
-    backSpeed: 40,
-    backDelay: 700,
-    loop: true
-});
-</script>
-</h2>
-<!--QUICK INTRO TEXT, NEED TO REPLACE-->
-<div>
-  <p style="margin-left:10%; margin-right:10%;">
-    <br>
-    <br>
-    CS @ Wellesley College<br>
-    Business Development Intern @ <a class="external" href="https://www.macrocycle.tech/">MacroCycle Technologies</a><br>
-    Previously Product Development Intern @ <a class="external" href="https://www.sagexinc.com/">SageX Inc.</a>, World Finalist (US Top 16) @ <a class="external" href="https://techcommunity.microsoft.com/t5/student-developer-blog/meet-the-2023-imagine-cup-world-finalists/ba-p/3754378">Microsoft Imagine Cup 2023</a>
-    <br>
-    <br>
-  </p>
-<button onclick="window.location.href='https://drive.google.com/file/d/1goejj3zSlB3SbLjl-yVCbV4fv1ilE6kO/view';" class="download" style="margin-left:10%; margin-right:10%;">DOWNLOAD RESUME</button>
-</div>
-<div>
-  <br> 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br> 
-    <br>
-    <br>
-    <a class="internal" href="#middle">SCROLL</a>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-</div>
-<br>
-<h2 style="margin-left:10%;">SELECTED PROJECTS</h2>
-
-<div class="controls">
-<a class="prev" onclick="minusSlides(1)">
-<img class="icon" src="icons/prev.svg">
-</a>
-
-<div id="playdiv">
-<button id="play" class="play" onclick="autoSlides(slideIndex)">
-  <img class="icon" src="icons/play.svg">
-</button>
-</div>
-
-<div id="haltdiv">
-<button id="halt" class="halt" onclick="pause()">
-  <img class="icon" src="icons/pause.svg">
-</button></div>
-
-<!-- <button class="toggle" onclick="toggler()">TOGGLER</button> -->
-<a class="next" onclick="plusSlides(1)">
-  <img class="icon" src="icons/next.svg">
-</a>
-</div>
-
-    <div class="playlist">
-    
-    <div class="project">
-      <img class="previous" src="thumbnails/10-CONNECT - TRANSPARENT.png">
-      <img class="image" src="thumbnails/01-STACKED-TRANSPARENT.png" id="middle">
-      <div class="text">
-        <h3>
-          TIMELINE
-        </h3>
-              <p>
-                Sample text
-              </p>
-        <h3>
-          TOOLS
-        </h3>
-              <p>
-                Sample text
-              </p>
-        <h3>
-          LINK
-        </h3>
-              <p>
-                Sample text
-              </p>
-        </div>
-    </div>
-    
-    <div class="project">
-      <img class="previous" src="thumbnails/01-STACKED-TRANSPARENT.png">
-      <img class="image" src="thumbnails/02-LTW-TRANSPARENT.png" id="middle">
-      <div class="text">
-        <h3>
-          TIMELINE
-        </h3>
-              <p>
-                Sample text
-              </p>
-        <h3>
-          TOOLS
-        </h3>
-              <p>
-                Sample text
-              </p>
-        <h3>
-          LINK
-        </h3>
-              <p>
-                Sample text
-              </p>
-      </div>
-    </div>
-
-    <div class="project">
-        <img class="previous" src="thumbnails/02-LTW-TRANSPARENT.png">
-        <img class="image" src="thumbnails/03-AIMO-TRANSPARENT.png" id="middle">
-        <div class="text">
-          <h3>
-            TIMELINE
-          </h3>
-                <p>
-                  Sample text
-                </p>
-          <h3>
-            TOOLS
-          </h3>
-                <p>
-                  Sample text
-                </p>
-          <h3>
-            LINK
-          </h3>
-                <p>
-                  Sample text
-                </p>
-        </div>
-      </div>
-      
-    <div class="project">
-        <img class="previous" src="thumbnails/03-AIMO-TRANSPARENT.png">
-        <img class="image" src="thumbnails/04-NOMBOX-TRANSPARENT.png" id="middle">
-        <div class="text">
-          <h3>
-            TIMELINE
-          </h3>
-                <p>
-                  Sample text
-                </p>
-          <h3>
-            TOOLS
-          </h3>
-                <p>
-                  Sample text
-                </p>
-          <h3>
-            LINK
-          </h3>
-                <p>
-                  Sample text
-                </p>
-        </div>
-      </div>
-
-    <div class="project">
-        <img class="previous" src="thumbnails/04-NOMBOX-TRANSPARENT.png">
-        <img class="image" src="thumbnails/05-NEURONIFY - TRANSPARENT.png" id="middle">
-        <div class="text">
-          <h3>
-            TIMELINE
-          </h3>
-                <p>
-                  Sample text
-                </p>
-          <h3>
-            TOOLS
-          </h3>
-                <p>
-                  Sample text
-                </p>
-          <h3>
-            LINK
-          </h3>
-                <p>
-                  Sample text
-                </p>
-        </div>
-      </div>
-
-    <div class="project">
-        <img class="previous" src="thumbnails/05-NEURONIFY - TRANSPARENT.png">
-        <img class="image" src="thumbnails/06-NUTRIAID - TRANSPARENT.png" id="middle">
-        <div class="text">
-          <h3>
-            TIMELINE
-          </h3>
-                <p>
-                  Sample text
-                </p>
-          <h3>
-            TOOLS
-          </h3>
-                <p>
-                  Sample text
-                </p>
-          <h3>
-            LINK
-          </h3>
-                <p>
-                  Sample text
-                </p>
-        </div>
-      </div>
-
-    <div class="project">
-        <img class="previous" src="thumbnails/06-NUTRIAID - TRANSPARENT.png">
-        <img class="image" src="thumbnails/07-TAPE - TRANSPARENT.png" id="middle">
-        <div class="text">
-          <h3>
-            TIMELINE
-          </h3>
-                <p>
-                  Sample text
-                </p>
-          <h3>
-            TOOLS
-          </h3>
-                <p>
-                  Sample text
-                </p>
-          <h3>
-            LINK
-          </h3>
-                <p>
-                  Sample text
-                </p>
-        </div>
-    </div>
-
-    <div class="project">
-        <img class="previous" src="thumbnails/07-TAPE - TRANSPARENT.png">
-        <img class="image" src="thumbnails/08-SAGEX - TRANSPARENT.png" id="middle">
-        <div class="text">
-          <h3>
-            TIMELINE
-          </h3>
-                <p>
-                  Sample text
-                </p>
-          <h3>
-            TOOLS
-          </h3>
-                <p>
-                  Sample text
-                </p>
-          <h3>
-            LINK
-          </h3>
-                <p>
-                  Sample text
-                </p>
-        </div>
-    </div>
-
-        <div class="project">
-        <img class="previous" src="thumbnails/08-SAGEX - TRANSPARENT.png">
-        <img class="image" src="thumbnails/09-MACROCYCLE-TRANSPARENT.png" id="middle">
-        <div class="text">
-          <h3>
-            TIMELINE
-          </h3>
-                <p>
-                  Sample text
-                </p>
-          <h3>
-            TOOLS
-          </h3>
-                <p>
-                  Sample text
-                </p>
-          <h3>
-            LINK
-          </h3>
-                <p>
-                  Sample text
-                </p>
-        </div>
-    </div>
-    <div class="project">
-        <img class="previous" src="thumbnails/09-MACROCYCLE-TRANSPARENT.png">
-        <img class="image" src="thumbnails/10-CONNECT - TRANSPARENT.png" id="middle">
-        <div class="text">
-          <h3>
-            TIMELINE
-          </h3>
-                <p>
-                  Sample text
-                </p>
-          <h3>
-            TOOLS
-          </h3>
-                <p>
-                  Sample text
-                </p>
-          <h3>
-            LINK
-          </h3>
-                <p>
-                  Sample text
-                </p>
-        </div>
-    </div>
-    <div class="project">
-      <img class="previous" src="thumbnails/10-CONNECT - TRANSPARENT.png">
-      <img class="image" src="thumbnails/01-STACKED-TRANSPARENT.png" id="middle">
-      <div class="text">
-        <h3>
-          TIMELINE
-        </h3>
-              <p>
-                Sample text
-              </p>
-        <h3>
-          TOOLS
-        </h3>
-              <p>
-                Sample text
-              </p>
-        <h3>
-          LINK
-        </h3>
-              <p>
-                Sample text
-              </p>
-        </div>
-    </div>
-        
-    </div>
-    <script>
-        
-const play = document.getElementById("play");
-const halt = document.getElementById("halt");
-const playdiv = document.getElementById("playdiv");
-const haltdiv = document.getElementById("haltdiv");
-        let slideIndex = 1;
-        showSlides(slideIndex);
-       
-        
-        function currentSlide(n) {
-          showSlides(n);
-          showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-          let i;
-          let slides = document.getElementsByClassName("project");
-    
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  
-          }
-          slides[slideIndex-1].style.display = "block";  
-        }
-    
-        function autoSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("project");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {slideIndex = 1}
-      slides[slideIndex-1].style.display = "inline-block";
-      customTimeout = setTimeout(autoSlides, 1500);
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
+      navbar.classList.remove('bg-white/30', 'backdrop-blur-md', 'rounded-xl', 'top-4', 'mx-4');
+      navbar.classList.add('bg-white', 'rounded-none', 'top-0', 'left-0', 'right-0', 'mx-0');
+    } else {
+      navbar.classList.add('bg-white/30', 'backdrop-blur-md', 'rounded-xl', 'top-4', 'mx-4');
+      navbar.classList.remove('bg-white', 'rounded-none', 'top-0', 'mx-0');
     }
-      function pause() {
-        clearTimeout(customTimeout);
-      }
-    
-        function plusSlides(n) {
-            playdiv.style.display = "inline-block";
-            haltdiv.style.display = "none";
-          showSlides(n);
-          showSlides(slideIndex += n);
-            pause();
-        }
-        function minusSlides(n) {
-            playdiv.style.display = "inline-block";
-            haltdiv.style.display = "none";
-          showSlides(n);
-          showSlides(slideIndex -= n);
-            pause();
-        }
-playdiv.style.display = "inline-block"
-haltdiv.style.display = "none";
-
-play.addEventListener("click", () => {
-  playdiv.style.display = "none";
-  haltdiv.style.display = "inline-block";
-});
-
-halt.addEventListener("click", () => {
-  playdiv.style.display = "inline-block";
-  haltdiv.style.display = "none";
-});
-
-    </script>
- 
-<br>
-<br>
-<br>
- 
-
-
-<div id="mySidepanel" class="sidepanel">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <iframe style="border-radius:12px" 
-  src="https://open.spotify.com/embed/playlist/3ElzOCFBGW8693nACsL7Wy?utm_source=generator" 
-  width="100%" height="50%" frameBorder="0" allowfullscreen="" 
-  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-  loading="lazy"></iframe>
-</div>
-
-<button class="openbtn" onclick="openNav()">
-  <img class="disc rotate" src="https://drive.google.com/uc?export=view&id=1xIloxtmujsIVKMob378Of_Yi3gJ6WQ97" alt="">
-</button>
-
-<script>
-  /* Set the width of the sidebar to 30% of the screen (show it) */
-function openNav() {
-  document.getElementById("mySidepanel").style.width = "30%";
-}
-
-/* Set the width of the sidebar to 0 (hide it) */
-function closeNav() {
-  document.getElementById("mySidepanel").style.width = "0";
-}
-
-
+  });
 </script>
+
+<!-- Banner -->
+<section id="home" class="bg-blue-50 py-64">
+  <div class="max-w-screen-xl mx-auto px-10 md:px-40 text-left">
+    <h2 class="text-4xl font-semibold mb-6">👋 Hi, I'm Elizabeth Huang.</h2>
+    <div class="space-x-4">
+      <a href="RESUME_LINK.pdf" target="_blank" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Resume</a>
+      <a href="#projects" class="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-900">Projects</a>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-20">
+  <div class="max-w-screen-xl mx-auto px-10 md:px-40">
+    <h3 class="text-2xl font-bold mb-6 text-center">Projects</h3>
+
+    <!-- Filter Buttons -->
+    <div class="flex justify-center space-x-4 mb-6">
+      <button onclick="filterCards('all')" class="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300">All</button>
+      <button onclick="filterCards('web')" class="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300">Web</button>
+      <button onclick="filterCards('cv')" class="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300">Computer Vision</button>
+      <button onclick="filterCards('ml')" class="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300">Machine Learning</button>
+      <button onclick="filterCards('design')" class="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300">Design</button>
+    </div>
+
+    <!-- Gallery -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="projectGallery">
+      <div class="card web design bg-white shadow rounded overflow-hidden">
+        <a href="projects/template.html" class="block">
+          <!-- Image at top, clipped to rounded corners -->
+          <div class="h-48 w-full">
+            <img 
+              src="https://tse3.mm.bing.net/th/id/OIP.1pabx4-OyY95rTphWtu7RgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" 
+              alt="placeholder" 
+              class="w-full h-full object-cover"
+            >
+          </div>
+
+          <!-- Card content -->
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-2">Placeholder</h4>
+            <p class="text-sm mb-3">Placeholder</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 text-xs bg-blue-100 text-blue-800 rounded-full">Web</span>
+              <span class="px-2 py-1 text-xs bg-yellow-100 text-yellow-800 rounded-full">Design</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card cv ml web bg-white p-4 shadow rounded">
+        <a href="projects/template.html">
+        <h4 class="font-semibold text-lg mb-2">Placeholder</h4>
+        <p class="text-sm mb-3">Placeholder</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-2 py-1 text-xs bg-green-100 text-green-800 rounded-full">Computer Vision</span>
+          <span class="px-2 py-1 text-xs bg-purple-100 text-purple-800 rounded-full">Machine Learning</span>
+          <span class="px-2 py-1 text-xs bg-blue-100 text-blue-800 rounded-full">Web</span>
+        </div>
+        </a>
+      </div>
+
+      <div class="card web design bg-white p-4 shadow rounded">
+        <a href="projects/template.html">
+        <h4 class="font-semibold text-lg mb-2">Placeholder</h4>
+        <p class="text-sm mb-3">Placeholder</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-2 py-1 text-xs bg-blue-100 text-blue-800 rounded-full">Web</span>
+          <span class="px-2 py-1 text-xs bg-yellow-100 text-yellow-800 rounded-full">Design</span>
+        </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  function filterCards(tag) {
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      card.style.display = (tag === 'all' || card.classList.contains(tag)) ? 'block' : 'none';
+    });
+  }
+</script>
+
+<!-- About -->
+<section id="about" class="py-20 bg-gray-50">
+  <div class="max-w-screen-xl mx-auto px-6 md:px-40">
+    <h3 class="text-2xl font-bold mb-8 text-center">About Me</h3>
+
+    <p class="text-base mb-4">I'm an aspiring AI/ML Engineer based in Boston, MA, with a background in Computer Science from Wellesley College. I'm particularly passionate about projects involving vision capabilities and image processing in applications I can visually see the impact I'm able to create.</p>
+    <p class="text-base mb-4">My interest in computer science was sparked through my hobby of digital art and graphic design. I loved playing around with blend modes, filter effects, bezier curves, anti-aliasing, and rasterization, which drew me to image processing and how software can transform visual data.</p>
+    <p class="text-base mb-4 py-4">In my free time, I like going to hackathons, working on start-ups, doodling, and playing tennis.</p></p>
+    <a href="#" class="px-4 py-2 border border-gray-800 text-gray-800 rounded hover:bg-gray-800 hover:text-white transition group">
+      View all experiences <span class="inline-block transition-transform group-hover:translate-x-1">→</span>
+    </a>
+    </section>
+
+<!-- Footer -->
+<footer id="contact" class="bg-gray-100 py-20">
+  <div class="max-w-screen-xl mx-auto px-10 md:px-40">
+    <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left space-y-6 md:space-y-0">
+      <!-- Left Column: Socials -->
+      <ul class="flex space-x-8 text-base">
+        <li><a rel="noopener" href="https://linkedin.com/in/yourprofile" target="_blank" class="hover:text-blue-600">LinkedIn</a></li>
+        <li><a rel="noopener" href="https://github.com/yourusername" target="_blank" class="hover:text-blue-600">GitHub</a></li>
+        <li><a rel="noopener" href="RESUME_LINK.pdf" target="_blank" class="hover:text-blue-600">Resume</a></li>
+      </ul>
+
+      <!-- Right Column: Email -->
+      <div class="text-base">
+        <p>elhuang04@gmail.com</p>
+      </div>
+    </div>
+
+    <!-- Bottom Line -->
+    <div class="mt-10 text-center text-sm text-gray-500">
+      © 2025 Elizabeth
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

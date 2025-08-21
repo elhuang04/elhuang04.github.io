@@ -1,0 +1,16 @@
+.icon {
+    width:1rem !important;
+    height:1rem !important;
+    margin-right: 1rem ;
+  }
+
+a.external { 
+    padding-right: 17px;  
+    background: transparent url(icons/expand-in.svg) no-repeat top right;  
+    background-size: 12px;
+}
+a.external:hover{
+  text-decoration: underline;
+    background: transparent url(icons/expand-out.svg) no-repeat top right;  
+    background-size: 12px;
+}
