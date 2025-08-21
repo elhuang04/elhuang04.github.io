@@ -4,13 +4,15 @@
     margin-right: 1rem ;
   }
 
-a.external { 
-    padding-right: 17px;  
-    background: transparent url(icons/expand-in.svg) no-repeat top right;  
-    background-size: 12px;
+a.external {
+    text-decoration: dotted underline;
+    padding-right: 1.3rem;
+    background: transparent url(icons/expand-in.png) no-repeat right 0.15rem;
+    background-size: 1rem;
 }
-a.external:hover{
-  text-decoration: underline;
-    background: transparent url(icons/expand-out.svg) no-repeat top right;  
-    background-size: 12px;
+
+a.external:hover {
+    text-decoration: underline;
+    background: transparent url(icons/expand-out.png) no-repeat right 0.15rem;
+    background-size: 1rem;
 }
