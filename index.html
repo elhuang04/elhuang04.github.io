@@ -62,19 +62,23 @@
     <h3 class="text-2xl font-bold mb-6 text-center">Projects</h3>
 
     <!-- Filter Buttons -->
-    <div class="flex justify-center space-x-4 mb-6">
-      <button onclick="filterCards('all')" class="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300">All</button>
-      <button onclick="filterCards('web')" class="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300">Web</button>
-      <button onclick="filterCards('cv')" class="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300">Computer Vision</button>
-      <button onclick="filterCards('ml')" class="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300">Machine Learning</button>
-      <button onclick="filterCards('design')" class="px-3 py-1 bg-gray-200 rounded hover:bg-gray-300">Design</button>
+    <div class="flex justify-center space-x-4 mb-6" id="filter-buttons">
+      <button onclick="filterCards('all', this)" class="px-3 py-1 border border-gray-400 rounded text-gray-700 bg-transparent hover:border-gray-600 hover:text-gray-900">All</button>
+      <button onclick="filterCards('school', this)" class="px-3 py-1 border border-gray-400 rounded text-gray-700 bg-transparent hover:border-gray-600 hover:text-gray-900">School</button>
+      <button onclick="filterCards('work', this)" class="px-3 py-1 border border-gray-400 rounded text-gray-700 bg-transparent hover:border-gray-600 hover:text-gray-900">Work</button>
+      <button onclick="filterCards('personal', this)" class="px-3 py-1 border border-gray-400 rounded text-gray-700 bg-transparent hover:border-gray-600 hover:text-gray-900">Personal</button>
+      <button onclick="filterCards('design', this)" class="px-3 py-1 border border-gray-400 rounded text-gray-700 bg-transparent hover:border-gray-600 hover:text-gray-900">Design</button>
+      <button onclick="filterCards('software', this)" class="px-3 py-1 border border-gray-400 rounded text-gray-700 bg-transparent hover:border-gray-600 hover:text-gray-900">Software</button>
+      <button onclick="filterCards('hardware', this)" class="px-3 py-1 border border-gray-400 rounded text-gray-700 bg-transparent hover:border-gray-600 hover:text-gray-900">Hardware</button>
+      <button onclick="filterCards('pm', this)" class="px-3 py-1 border border-gray-400 rounded text-gray-700 bg-transparent hover:border-gray-600 hover:text-gray-900">Product Management</button>
     </div>
 
     <!-- Gallery -->
+
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="projectGallery">
-      <div class="card web design bg-white shadow rounded overflow-hidden">
+      <!------------ PLACEHOLDER ---------------->
+      <!-- <div class="card bg-white shadow rounded overflow-hidden">
         <a href="projects/template.html" class="block">
-          <!-- Image at top, clipped to rounded corners -->
           <div class="h-48 w-full">
             <img 
               src="https://tse3.mm.bing.net/th/id/OIP.1pabx4-OyY95rTphWtu7RgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" 
@@ -82,51 +86,396 @@
               class="w-full h-full object-cover"
             >
           </div>
-
-          <!-- Card content -->
           <div class="p-4">
             <h4 class="font-semibold text-lg mb-2">Placeholder</h4>
             <p class="text-sm mb-3">Placeholder</p>
             <div class="flex flex-wrap gap-2">
-              <span class="px-2 py-1 text-xs bg-blue-100 text-blue-800 rounded-full">Web</span>
-              <span class="px-2 py-1 text-xs bg-yellow-100 text-yellow-800 rounded-full">Design</span>
+            </div>
+          </div>
+        </a>
+      </div> -->
+      <!------------ PLACEHOLDER END ---------------->
+
+      <!------------ 01 ---------------->
+      <div class="card personal design bg-white shadow rounded overflow-hidden">
+        <a href="projects/template.html" class="block">
+          <!-- Image at top, clipped to rounded corners -->
+          <div class="h-48 w-full">
+            <img 
+              src="thumbnails/01-STACKED.png" 
+              alt="'Stacked' project thumbnail" 
+              class="w-full h-full object-cover"
+            >
+          </div>
+          <!-- Card content -->
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-2">Stacked</h4>
+            <p class="text-sm mb-3">Rice Design-a-thon: Level Up! 2022</p>
+            <div class="flex flex-wrap gap-2">
             </div>
           </div>
         </a>
       </div>
-
-      <div class="card cv ml web bg-white p-4 shadow rounded">
-        <a href="projects/template.html">
-        <h4 class="font-semibold text-lg mb-2">Placeholder</h4>
-        <p class="text-sm mb-3">Placeholder</p>
-        <div class="flex flex-wrap gap-2">
-          <span class="px-2 py-1 text-xs bg-green-100 text-green-800 rounded-full">Computer Vision</span>
-          <span class="px-2 py-1 text-xs bg-purple-100 text-purple-800 rounded-full">Machine Learning</span>
-          <span class="px-2 py-1 text-xs bg-blue-100 text-blue-800 rounded-full">Web</span>
-        </div>
+      <!------------ 01 END ---------------->
+      <!------------ 02 ---------------->
+      <div class="card personal software bg-white shadow rounded overflow-hidden">
+        <a href="projects/template.html" class="block">
+          <!-- Image at top, clipped to rounded corners -->
+          <div class="h-48 w-full">
+            <img 
+              src="thumbnails/02-LTW.png" 
+              alt="'Light the Way' project thumbnail" 
+              class="w-full h-full object-cover"
+            >
+          </div>
+          <!-- Card content -->
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-2">Light the Way</h4>
+            <p class="text-sm mb-3">BostonHacks 2022</p>
+            <div class="flex flex-wrap gap-2">
+            </div>
+          </div>
         </a>
       </div>
-
-      <div class="card web design bg-white p-4 shadow rounded">
-        <a href="projects/template.html">
-        <h4 class="font-semibold text-lg mb-2">Placeholder</h4>
-        <p class="text-sm mb-3">Placeholder</p>
-        <div class="flex flex-wrap gap-2">
-          <span class="px-2 py-1 text-xs bg-blue-100 text-blue-800 rounded-full">Web</span>
-          <span class="px-2 py-1 text-xs bg-yellow-100 text-yellow-800 rounded-full">Design</span>
-        </div>
+      <!------------ 02 END ---------------->
+      <!------------ 03 ---------------->
+      <div class="card personal software pm bg-white shadow rounded overflow-hidden">
+        <a href="projects/template.html" class="block">
+          <!-- Image at top, clipped to rounded corners -->
+          <div class="h-48 w-full">
+            <img 
+              src="thumbnails/03-AIMO.png"
+              alt="'Aimo!' project thumbnail"  
+              class="w-full h-full object-cover"
+            >
+          </div>
+          <!-- Card content -->
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-2">Aimo!</h4>
+            <p class="text-sm mb-3">Microsoft Imagine Cup 2023</p>
+            <div class="flex flex-wrap gap-2">
+            </div>
+          </div>
         </a>
       </div>
-    </div>
+      <!------------ 03 END ---------------->
+      <!------------ 04 ---------------->
+      <div class="card personal hardware bg-white shadow rounded overflow-hidden">
+        <a href="projects/template.html" class="block">
+          <!-- Image at top, clipped to rounded corners -->
+          <div class="h-48 w-full">
+            <img 
+              src="thumbnails/04-NOMBOX.png"
+              alt="'Nombox' project thumbnail"
+              class="w-full h-full object-cover"
+            >
+          </div>
+          <!-- Card content -->
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-2">Nombox</h4>
+            <p class="text-sm mb-3">MakeHarvard 2023</p>
+            <div class="flex flex-wrap gap-2">
+            </div>
+          </div>
+        </a>
+      </div>
+      <!------------ 04 END ---------------->
+      <!------------ 05 ---------------->
+      <div class="card personal design pm bg-white shadow rounded overflow-hidden">
+        <a href="projects/template.html" class="block">
+          <!-- Image at top, clipped to rounded corners -->
+          <div class="h-48 w-full">
+            <img 
+              src="thumbnails/05-NEURONIFY.png"
+              alt="'Neuronify' project thumbnail"
+              class="w-full h-full object-cover"
+            >
+          </div>
+          <!-- Card content -->
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-2">Neuronify</h4>
+            <p class="text-sm mb-3">Yale CBIT Healthcare Hackathon 2023</p>
+            <div class="flex flex-wrap gap-2">
+            </div>
+          </div>
+        </a>
+      </div>
+      <!------------ 05 END ---------------->
+      <!------------ 06 ---------------->
+      <div class="card personal software bg-white shadow rounded overflow-hidden">
+        <a href="projects/template.html" class="block">
+          <!-- Image at top, clipped to rounded corners -->
+          <div class="h-48 w-full">
+            <img 
+              src="thumbnails/06-NUTRIAID.png"
+              alt="'NutriAid' project thumbnail"
+              class="w-full h-full object-cover"
+            >
+          </div>
+          <!-- Card content -->
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-2">NutriAid</h4>
+            <p class="text-sm mb-3">HackPrinceton Spring 2023</p>
+            <div class="flex flex-wrap gap-2">
+            </div>
+          </div>
+        </a>
+      </div>
+      <!------------ 06 END ---------------->
+      <!------------ 07 ---------------->
+      <div class="card work software bg-white shadow rounded overflow-hidden">
+        <a href="projects/template.html" class="block">
+          <!-- Image at top, clipped to rounded corners -->
+          <div class="h-48 w-full">
+            <img 
+              src="thumbnails/07-SAGEX.png"
+              alt="SageX Inc internship project thumbnail"
+              class="w-full h-full object-cover"
+            >
+          </div>
+          <!-- Card content -->
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-2">SageX Inc</h4>
+            <p class="text-sm mb-3">Summer Internship 2023</p>
+            <div class="flex flex-wrap gap-2">
+            </div>
+          </div>
+        </a>
+      </div>
+      <!------------ 07 END ---------------->
+      <!------------ 08 ---------------->
+      <div class="card work pm bg-white shadow rounded overflow-hidden">
+        <a href="projects/template.html" class="block">
+          <!-- Image at top, clipped to rounded corners -->
+          <div class="h-48 w-full">
+            <img 
+              src="thumbnails/08-MACROCYCLE.png"
+              alt="MIT delta v fellowship / Macrocyle internship project thumbnail"
+              class="w-full h-full object-cover"
+            >
+          </div>
+          <!-- Card content -->
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-2">MIT delta v | Macrocycle Technologies</h4>
+            <p class="text-sm mb-3">Summer Fellow 2023</p>
+            <div class="flex flex-wrap gap-2">
+            </div>
+          </div>
+        </a>
+      </div>
+      <!------------ 08 END ---------------->
+      <!------------ 09 ---------------->
+      <div class="card work pm software bg-white shadow rounded overflow-hidden">
+        <a href="projects/template.html" class="block">
+          <!-- Image at top, clipped to rounded corners -->
+          <div class="h-48 w-full">
+            <img 
+              src="thumbnails/09-NASA-AETC.png"
+              alt="NASA - AETC internship project thumbnail"
+              class="w-full h-full object-cover"
+            >
+          </div>
+          <!-- Card content -->
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-2">NASA - AETC</h4>
+            <p class="text-sm mb-3">Summer Internship 2024</p>
+            <div class="flex flex-wrap gap-2">
+            </div>
+          </div>
+        </a>
+      </div>
+      <!------------ 09 END ---------------->
+      <!------------ 10 ---------------->
+      <div class="card personal design bg-white shadow rounded overflow-hidden">
+        <a href="projects/template.html" class="block">
+          <!-- Image at top, clipped to rounded corners -->
+          <div class="h-48 w-full">
+            <img 
+              src="thumbnails/10-BESPOKE.png"
+              alt="'Bespoke' project thumbnail"
+              class="w-full h-full object-cover"
+            >
+          </div>
+          <!-- Card content -->
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-2">Bespoke</h4>
+            <p class="text-sm mb-3">Boston University FORGE Design Studios - Catalyst 2025</p>
+            <div class="flex flex-wrap gap-2">
+            </div>
+          </div>
+        </a>
+      </div>
+      <!------------ 10 END ---------------->
+      <!------------ 11 ---------------->
+      <div class="card work software bg-white shadow rounded overflow-hidden">
+        <a href="projects/template.html" class="block">
+          <!-- Image at top, clipped to rounded corners -->
+          <div class="h-48 w-full">
+            <img 
+              src="thumbnails/11-NASA-GVIS.png"
+              alt="NASA - GVIS internship project thumbnail"
+              class="w-full h-full object-cover"
+            >
+          </div>
+          <!-- Card content -->
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-2">NASA - OpenAIR Project | GVIS Lab, Advanced Computing & Visaulization</h4>
+            <p class="text-sm mb-3">Summer Internship 2025</p>
+            <div class="flex flex-wrap gap-2">
+            </div>
+          </div>
+        </a>
+      </div>
+      <!------------ 11 END ---------------->
+      <!------------ 12 ---------------->
+      <div class="card personal software pm bg-white shadow rounded overflow-hidden">
+        <a href="projects/template.html" class="block">
+          <!-- Image at top, clipped to rounded corners -->
+          <div class="h-48 w-full">
+            <img 
+              src="thumbnails/12-Vt.png"
+              alt="'Terminal Velocity' project thumbnail"
+              class="w-full h-full object-cover"
+            >
+          </div>
+          <!-- Card content -->
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-2">Terminal Velocity</h4>
+            <p class="text-sm mb-3">IBM TechXchange 2025 Pre-conference watsonx Hackathon</p>
+            <div class="flex flex-wrap gap-2">
+            </div>
+          </div>
+        </a>
+      </div>
+      <!------------ 12 END ---------------->
+
+      
+      <!-- !!!!!!!!!!!!!!!!DO NOT DELETE LINES BELOW!!!!!!!!!!!!! -->
   </div>
 </section>
 <script>
-  function filterCards(tag) {
+  function filterCards(tag, clickedButton) {
+    // Filter cards
     const cards = document.querySelectorAll('.card');
     cards.forEach(card => {
       card.style.display = (tag === 'all' || card.classList.contains(tag)) ? 'block' : 'none';
     });
+
+    // Reset all buttons to outline style
+    const buttons = document.querySelectorAll('#filter-buttons button');
+    buttons.forEach(button => {
+      button.classList.remove('bg-gray-200', 'text-gray-900');
+      button.classList.add('bg-transparent', 'text-gray-700');
+    });
+
+    // Apply filled style to the clicked button
+    clickedButton.classList.remove('bg-transparent', 'text-gray-700');
+    clickedButton.classList.add('bg-gray-200', 'text-gray-900');
   }
+
+  // Set default active on page load
+  window.onload = () => {
+    const defaultButton = document.querySelector('#filter-buttons button');
+    if (defaultButton) defaultButton.click();
+  };
+</script>
+
+<script>
+  const categoryColors = {
+  school: "#FFDEDE",
+  work: "#E1F1FF",
+  personal: "#D9FFE5",
+  design: "#FFF5CA",
+  software: "#F8E6FF",
+  hardware: "#FFE5CE",
+  pm: "#EDFFCB"
+};
+
+// Convert pastel hex to saturated RGB, then mix with black
+function getRichTextColor(hex, blackRatio = 0.15) {
+  const rgb = hex.replace("#", "").match(/.{2}/g).map(x => parseInt(x, 16));
+  const [r, g, b] = rgb;
+
+  // Convert to HSL
+  const rNorm = r / 255, gNorm = g / 255, bNorm = b / 255;
+  const max = Math.max(rNorm, gNorm, bNorm), min = Math.min(rNorm, gNorm, bNorm);
+  let h, s, l = (max + min) / 2;
+
+  if (max === min) {
+    h = s = 0;
+  } else {
+    const d = max - min;
+    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+    switch (max) {
+      case rNorm: h = (gNorm - bNorm) / d + (gNorm < bNorm ? 6 : 0); break;
+      case gNorm: h = (bNorm - rNorm) / d + 2; break;
+      case bNorm: h = (rNorm - gNorm) / d + 4; break;
+    }
+    h /= 6;
+  }
+
+  // Generate saturated color with same hue
+  const saturatedHex = hslToHex(h * 360, 100, 40);
+
+  // Mix with black
+  return mixWithBlack(saturatedHex, blackRatio);
+}
+
+// Convert HSL to Hex
+function hslToHex(h, s, l) {
+  s /= 100;
+  l /= 100;
+  const c = (1 - Math.abs(2 * l - 1)) * s;
+  const x = c * (1 - Math.abs((h / 60) % 2 - 1));
+  const m = l - c / 2;
+  let r, g, b;
+
+  if (h < 60) [r, g, b] = [c, x, 0];
+  else if (h < 120) [r, g, b] = [x, c, 0];
+  else if (h < 180) [r, g, b] = [0, c, x];
+  else if (h < 240) [r, g, b] = [0, x, c];
+  else if (h < 300) [r, g, b] = [x, 0, c];
+  else [r, g, b] = [c, 0, x];
+
+  const toHex = val => Math.round((val + m) * 255).toString(16).padStart(2, '0');
+  return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
+}
+
+// Mix hex color with black
+function mixWithBlack(hex, ratio) {
+  const rgb = hex.replace("#", "").match(/.{2}/g).map(x => parseInt(x, 16));
+  const mixed = rgb.map(val => Math.round(val * (1 - ratio)));
+  return `rgb(${mixed.join(",")})`;
+}
+
+// Apply labels to cards
+function applyCardLabels() {
+  const cards = document.querySelectorAll('.card');
+
+  cards.forEach(card => {
+    const categories = Object.keys(categoryColors).filter(cat => card.classList.contains(cat));
+    const labelContainer = card.querySelector('.flex.flex-wrap');
+
+    if (labelContainer) {
+      categories.forEach(cat => {
+        if (!labelContainer.querySelector(`span.${cat}`)) {
+          const span = document.createElement('span');
+
+          // Conditional label override for "pm"
+          const labelText = cat === "pm" ? "Product Management" : cat.charAt(0).toUpperCase() + cat.slice(1);
+
+          span.textContent = labelText;
+          span.className = `px-2 py-1 text-xs rounded-full ${cat}`;
+          span.style.backgroundColor = categoryColors[cat];
+          span.style.color = getRichTextColor(categoryColors[cat], 0.15); // 15% black blend
+          labelContainer.appendChild(span);
+        }
+      });
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', applyCardLabels);
 </script>
 
 <!-- About -->
