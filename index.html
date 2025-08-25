@@ -15,8 +15,8 @@
   <h2 class="text-xl font-bold"><a href="#home" class="hover:text-blue-600"><img class="icon" alt="custom blue home icon" src="./icons/home.svg"></a></h2>
   <ul class="flex space-x-6">
     <li><a href="#home" class="hover:text-blue-600">Home</a></li>
-    <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
     <li><a href="#about" class="hover:text-blue-600">About</a></li>
+    <li><a href="#projects" class="hover:text-blue-600">Project Links</a></li>
     <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
   </ul>
 </nav>
@@ -56,16 +56,29 @@
   </div>
 </section>
 
+<!-- About -->
+<section id="about" class="py-20 bg-gray-50">
+  <div class="max-w-screen-xl mx-auto px-6 md:px-40">
+    <h3 class="text-2xl font-bold mb-8 text-center">About Me</h3>
+
+    <p class="text-base mb-4">I'm an aspiring AI/ML Engineer with a B.A. in Computer Science from Wellesley College. I'm particularly passionate about projects involving vision capabilities and image processing in applications I can visually see the impact I'm able to create.</p>
+    <p class="text-base mb-4">My interest in computer science was sparked through my hobby of digital art and graphic design. I loved playing around with blend modes, filter effects, bezier curves, anti-aliasing, and rasterization, which drew me to image processing and how software can transform visual data.</p>
+    <p class="text-base mb-4 py-4">In my free time, I like going to hackathons, working on start-ups, doodling, and playing tennis.</p></p>
+    <a href="#" class="px-4 py-2 border border-gray-800 text-gray-800 rounded hover:bg-gray-800 hover:text-white transition group">
+      View all experiences <span class="inline-block transition-transform group-hover:translate-x-1">→</span>
+    </a>
+</section>
+
 <!-- Projects -->
 <section id="projects" class="py-20">
   <div class="max-w-screen-xl mx-auto px-10 md:px-40">
-    <h3 class="text-2xl font-bold mb-6 text-center">Projects</h3>
+    <h3 class="text-2xl font-bold mb-6 text-center">Project Links</h3>
 
     <!-- Filter Buttons -->
     <div class="flex flex-wrap justify-center gap-2 mb-6" id="filter-buttons">
       <button onclick="filterCards('all', this)" class="px-3 py-1 border border-gray-400 rounded text-gray-700 bg-transparent hover:border-gray-600 hover:text-gray-900">All</button>
       <button onclick="filterCards('school', this)" class="px-3 py-1 border border-gray-400 rounded text-gray-700 bg-transparent hover:border-gray-600 hover:text-gray-900">School</button>
-      <button onclick="filterCards('work', this)" class="px-3 py-1 border border-gray-400 rounded text-gray-700 bg-transparent hover:border-gray-600 hover:text-gray-900">Work</button>
+      <!-- <button onclick="filterCards('work', this)" class="px-3 py-1 border border-gray-400 rounded text-gray-700 bg-transparent hover:border-gray-600 hover:text-gray-900">Work</button> -->
       <button onclick="filterCards('personal', this)" class="px-3 py-1 border border-gray-400 rounded text-gray-700 bg-transparent hover:border-gray-600 hover:text-gray-900">Personal</button>
       <button onclick="filterCards('design', this)" class="px-3 py-1 border border-gray-400 rounded text-gray-700 bg-transparent hover:border-gray-600 hover:text-gray-900">Design</button>
       <button onclick="filterCards('software', this)" class="px-3 py-1 border border-gray-400 rounded text-gray-700 bg-transparent hover:border-gray-600 hover:text-gray-900">Software</button>
@@ -75,8 +88,8 @@
 
 
     <!-- Gallery -->
-
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="projectGallery">
+    <div class="relative">
+    <div id="projectGallery" class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <!------------ PLACEHOLDER ---------------->
       <!-- <div class="card bg-white shadow rounded overflow-hidden">
         <a href="projects/template.html" class="block">
@@ -99,7 +112,7 @@
 
       <!------------ 01 ---------------->
       <div class="card personal design bg-white shadow rounded overflow-hidden">
-        <a href="projects/template.html" class="block">
+        <a href="https://devpost.com/software/placeholder-qxzpj9" class="block">
           <!-- Image at top, clipped to rounded corners -->
           <div class="h-48 w-full">
             <img 
@@ -120,7 +133,7 @@
       <!------------ 01 END ---------------->
       <!------------ 02 ---------------->
       <div class="card personal software bg-white shadow rounded overflow-hidden">
-        <a href="projects/template.html" class="block">
+        <a href="https://devpost.com/software/light-the-way" class="block">
           <!-- Image at top, clipped to rounded corners -->
           <div class="h-48 w-full">
             <img 
@@ -141,7 +154,7 @@
       <!------------ 02 END ---------------->
       <!------------ 03 ---------------->
       <div class="card personal software pm bg-white shadow rounded overflow-hidden">
-        <a href="projects/template.html" class="block">
+        <a href="https://tif3-aimo.carrd.co/" class="block">
           <!-- Image at top, clipped to rounded corners -->
           <div class="h-48 w-full">
             <img 
@@ -161,9 +174,8 @@
       </div>
       <!------------ 03 END ---------------->
       <!------------ 04 ---------------->
-      <div class="card personal hardware bg-white shadow rounded overflow-hidden">
+      <!-- <div class="card personal hardware bg-white shadow rounded overflow-hidden">
         <a href="projects/template.html" class="block">
-          <!-- Image at top, clipped to rounded corners -->
           <div class="h-48 w-full">
             <img 
               src="thumbnails/04-NOMBOX.png"
@@ -171,7 +183,6 @@
               class="w-full h-full object-cover"
             >
           </div>
-          <!-- Card content -->
           <div class="p-4">
             <h4 class="font-semibold text-lg mb-2">Nombox</h4>
             <p class="text-sm mb-3">MakeHarvard 2023</p>
@@ -179,11 +190,11 @@
             </div>
           </div>
         </a>
-      </div>
+      </div> -->
       <!------------ 04 END ---------------->
       <!------------ 05 ---------------->
       <div class="card personal design pm bg-white shadow rounded overflow-hidden">
-        <a href="projects/template.html" class="block">
+        <a href="https://www.figma.com/design/saeLEHwBNoyvzJU46xTAOZ/BBuddy-%7C-Yale-Healthcare-Hackathon-2023?m=auto&t=bQDF0tbcMtIS5rPr-1" class="block">
           <!-- Image at top, clipped to rounded corners -->
           <div class="h-48 w-full">
             <img 
@@ -204,7 +215,7 @@
       <!------------ 05 END ---------------->
       <!------------ 06 ---------------->
       <div class="card personal software bg-white shadow rounded overflow-hidden">
-        <a href="projects/template.html" class="block">
+        <a href="https://github.com/elhuang04/hackptown23/tree/imagescan" class="block">
           <!-- Image at top, clipped to rounded corners -->
           <div class="h-48 w-full">
             <img 
@@ -224,9 +235,8 @@
       </div>
       <!------------ 06 END ---------------->
       <!------------ 07 ---------------->
-      <div class="card work software bg-white shadow rounded overflow-hidden">
+      <!-- <div class="card work software bg-white shadow rounded overflow-hidden">
         <a href="projects/template.html" class="block">
-          <!-- Image at top, clipped to rounded corners -->
           <div class="h-48 w-full">
             <img 
               src="thumbnails/07-SAGEX.png"
@@ -234,7 +244,6 @@
               class="w-full h-full object-cover"
             >
           </div>
-          <!-- Card content -->
           <div class="p-4">
             <h4 class="font-semibold text-lg mb-2">SageX Inc</h4>
             <p class="text-sm mb-3">Summer Internship 2023</p>
@@ -242,12 +251,11 @@
             </div>
           </div>
         </a>
-      </div>
+      </div> -->
       <!------------ 07 END ---------------->
       <!------------ 08 ---------------->
-      <div class="card work pm bg-white shadow rounded overflow-hidden">
+      <!-- <div class="card work pm bg-white shadow rounded overflow-hidden">
         <a href="projects/template.html" class="block">
-          <!-- Image at top, clipped to rounded corners -->
           <div class="h-48 w-full">
             <img 
               src="thumbnails/08-MACROCYCLE.png"
@@ -255,7 +263,6 @@
               class="w-full h-full object-cover"
             >
           </div>
-          <!-- Card content -->
           <div class="p-4">
             <h4 class="font-semibold text-lg mb-2">MIT delta v | Macrocycle Technologies</h4>
             <p class="text-sm mb-3">Summer Fellow 2023, Fall Internship 2023</p>
@@ -263,12 +270,11 @@
             </div>
           </div>
         </a>
-      </div>
+      </div> -->
       <!------------ 08 END ---------------->
       <!------------ 09 ---------------->
-      <div class="card work pm software bg-white shadow rounded overflow-hidden">
+      <!-- <div class="card work pm software bg-white shadow rounded overflow-hidden">
         <a href="projects/template.html" class="block">
-          <!-- Image at top, clipped to rounded corners -->
           <div class="h-48 w-full">
             <img 
               src="thumbnails/09-NASA-AETC.png"
@@ -276,7 +282,6 @@
               class="w-full h-full object-cover"
             >
           </div>
-          <!-- Card content -->
           <div class="p-4">
             <h4 class="font-semibold text-lg mb-2">NASA - AETC</h4>
             <p class="text-sm mb-3">Summer Internship 2024</p>
@@ -284,11 +289,11 @@
             </div>
           </div>
         </a>
-      </div>
+      </div> -->
       <!------------ 09 END ---------------->
       <!------------ 10 ---------------->
       <div class="card personal design bg-white shadow rounded overflow-hidden">
-        <a href="projects/template.html" class="block">
+        <a href="https://devpost.com/software/bespoke-3elr4i" class="block">
           <!-- Image at top, clipped to rounded corners -->
           <div class="h-48 w-full">
             <img 
@@ -308,9 +313,8 @@
       </div>
       <!------------ 10 END ---------------->
       <!------------ 11 ---------------->
-      <div class="card work software bg-white shadow rounded overflow-hidden">
+      <!-- <div class="card work software bg-white shadow rounded overflow-hidden">
         <a href="projects/template.html" class="block">
-          <!-- Image at top, clipped to rounded corners -->
           <div class="h-48 w-full">
             <img 
               src="thumbnails/11-NASA-GVIS.png"
@@ -318,7 +322,6 @@
               class="w-full h-full object-cover"
             >
           </div>
-          <!-- Card content -->
           <div class="p-4">
             <h4 class="font-semibold text-lg mb-2">NASA - OpenAIR Project | GVIS Lab, Advanced Computing & Visaulization</h4>
             <p class="text-sm mb-3">Summer Internship 2025</p>
@@ -326,11 +329,11 @@
             </div>
           </div>
         </a>
-      </div>
+      </div> -->
       <!------------ 11 END ---------------->
       <!------------ 12 ---------------->
       <div class="card personal software pm bg-white shadow rounded overflow-hidden">
-        <a href="projects/template.html" class="block">
+        <a href="https://github.com/elhuang04/Terminal-Velocity" class="block">
           <!-- Image at top, clipped to rounded corners -->
           <div class="h-48 w-full">
             <img 
@@ -581,11 +584,77 @@
         </a>
       </div>
       <!------------ 23 END ---------------->
+      <!------------ 24 ---------------->
+      <div class="card personal design bg-white shadow rounded overflow-hidden">
+        <a href="https://www.harvardxr.com/events/xr-in-enterprise" class="block">
+          <!-- Image at top, clipped to rounded corners -->
+          <div class="h-48 w-full">
+            <img 
+              src="https://media.licdn.com/dms/image/D560BAQH-H_MWZzblBg/company-logo_200_200/0/1710253704598/harvardxr_logo?e=2147483647&v=beta&t=xNpMx1_TirSAPyd7PPFtGPewOBmySWF16ChuA3i5bMI"
+              alt="'cs111 thumbnail"
+              class="w-full h-full object-cover"
+            >
+          </div>
+          <!-- Card content -->
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-2">HarvardXR 2024</h4>
+            <p class="text-sm mb-3">Graphics (banners, tickets, posters), Panel moderator (XR in Enterprise)</p>
+            <div class="flex flex-wrap gap-2">
+            </div>
+          </div>
+        </a>
+      </div>
+      <!------------ 24 END ---------------->
+      <!------------ 25 ---------------->
+      <div class="card personal design bg-white shadow rounded overflow-hidden">
+        <a href="https://www.linkedin.com/company/engineeringhope/?viewAsMember=true" class="block">
+          <!-- Image at top, clipped to rounded corners -->
+          <div class="h-48 w-full">
+            <img 
+              src="https://media.licdn.com/dms/image/v2/D4E22AQHECMK14ho0IQ/feedshare-shrink_800/B4EZUW3dooG0Ag-/0/1739845393336?e=1758758400&v=beta&t=4vhWE-yPoZq5OkgqhU6TEMLBEu5dH56J3eyfpHe7hRw"
+              alt="'cs111 thumbnail"
+              class="w-full h-full object-cover"
+            >
+          </div>
+          <!-- Card content -->
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-2">Hacking Injustice 2025</h4>
+            <p class="text-sm mb-3">Engineering Hope | Co-director of Commuications: branding, all graphics, social media</p>
+            <div class="flex flex-wrap gap-2">
+            </div>
+          </div>
+        </a>
+      </div>
+      <!------------ 25 END ---------------->
+      <!------------ 26 ---------------->
+      <div class="card personal design bg-white shadow rounded overflow-hidden">
+        <a href="https://www.figma.com/design/Cfa3aiTFnYhbU3BXKgmgl8/HackNC-Materials?m=auto&t=H4DscX8T73Stay0w-1" class="block">
+          <!-- Image at top, clipped to rounded corners -->
+          <div class="h-48 w-full">
+            <img 
+              src="https://miro.medium.com/v2/resize:fit:1200/1*i2EUB_CV9nzcDv3J69-yGg.png"
+              alt="'cs111 thumbnail"
+              class="w-full h-full object-cover"
+            >
+          </div>
+          <!-- Card content -->
+          <div class="p-4">
+            <h4 class="font-semibold text-lg mb-2">HackNC 2023</h4>
+            <p class="text-sm mb-3">Graphics (posters, stickets, banners)</p>
+            <div class="flex flex-wrap gap-2">
+            </div>
+          </div>
+        </a>
+      </div>
+      <!------------ 26 END ---------------->
+      
 
       
       <!-- !!!!!!!!!!!!!!!!DO NOT DELETE LINES BELOW!!!!!!!!!!!!! -->
+    </div>
   </div>
 </section>
+
 <script>
   function filterCards(tag, clickedButton) {
     // Filter cards
@@ -710,19 +779,6 @@ function applyCardLabels() {
 
 document.addEventListener('DOMContentLoaded', applyCardLabels);
 </script>
-
-<!-- About -->
-<section id="about" class="py-20 bg-gray-50">
-  <div class="max-w-screen-xl mx-auto px-6 md:px-40">
-    <h3 class="text-2xl font-bold mb-8 text-center">About Me</h3>
-
-    <p class="text-base mb-4">I'm an aspiring AI/ML Engineer based in Boston, MA, with a background in Computer Science from Wellesley College. I'm particularly passionate about projects involving vision capabilities and image processing in applications I can visually see the impact I'm able to create.</p>
-    <p class="text-base mb-4">My interest in computer science was sparked through my hobby of digital art and graphic design. I loved playing around with blend modes, filter effects, bezier curves, anti-aliasing, and rasterization, which drew me to image processing and how software can transform visual data.</p>
-    <p class="text-base mb-4 py-4">In my free time, I like going to hackathons, working on start-ups, doodling, and playing tennis.</p></p>
-    <a href="#" class="px-4 py-2 border border-gray-800 text-gray-800 rounded hover:bg-gray-800 hover:text-white transition group">
-      View all experiences <span class="inline-block transition-transform group-hover:translate-x-1">→</span>
-    </a>
-    </section>
 
 <!-- Footer -->
 <footer id="contact" class="bg-gray-100 py-20">
