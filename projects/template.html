@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Project Title | Elizabeth Huang</title>
+  <title>Elizabeth Huang | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="scripts/filterTags.js" defer></script>
+  <script src="scripts/navBar.js" defer></script>
+  <script src="scripts/applyCardLabels.js" defer></script>
+  <script src="scripts/showHideGallery.js" defer></script>
 </head>
 <body class="bg-white text-gray-800 font-sans">
 
@@ -12,10 +18,10 @@
 <nav id="navbar" class="fixed top-4 left-0 right-0 mx-4 transition-all duration-300 px-10 md:px-40 py-4 flex justify-between items-center bg-white/30 backdrop-blur-md rounded-xl shadow z-50">
   <h2 class="text-xl font-bold">Elizabeth Huang</h2>
   <ul class="flex space-x-6">
-    <li><a href="/index.html#banner" class="hover:text-blue-600">Home</a></li>
-    <li><a href="/index.html#projects" class="hover:text-blue-600">Projects</a></li>
-    <li><a href="/index.html#about" class="hover:text-blue-600">About</a></li>
-    <li><a href="/index.html#contact" class="hover:text-blue-600">Contact</a></li>
+    <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+    <li><a href="#about" class="hover:text-blue-600">About</a></li>
+    <li><a href="#projects" class="hover:text-blue-600">Project Links</a></li>
+    <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
   </ul>
 </nav>
 
@@ -49,7 +55,7 @@
       <section>
         <h2 class="text-xl font-semibold mb-2">🗓️ Timeline</h2>
         <ul class="list-disc list-inside text-gray-700 space-y-1">
-          January XX, 20XX - February XX, 20XX</li>
+          <li>January XX, 20XX - February XX, 20XX</li>
         </ul>
       </section>
 
